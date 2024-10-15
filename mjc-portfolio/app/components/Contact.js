@@ -1,15 +1,36 @@
-// app/components/Contact.js
+'use client';
+import { Icon } from '@iconify/react';
+
 export default function Contact() {
-    return (
-      <section id="contact" className="mb-8">
-        <h2 className="text-2xl font-semibold">Contact</h2>
-        <p className="mt-2">
-          You can reach me at: <a href="mailto:malcolmjconnor01@gmail.com" className="text-blue-500">malcolmjconnor01@gmail.com</a>
-        </p>
-        <p className="mt-2">
-          Connect with me on <a href="#" className="text-blue-500">LinkedIn</a>.
-        </p>
-      </section>
-    );
-  }
-  
+  return (
+    <section id="contact" className="h-screen mb-8 bg-lime-600 p-6 flex flex-col justify-center items-center shadow-lg text-center">
+      <h2 className="text-5xl font-bold text-zinc-800">Let's Work Together</h2>
+      
+      <div className="mt-6 flex space-x-6">
+        {/* Email Button */}
+        <button 
+          onClick={() => window.location.href = 'mailto:malcolmjconnor01@gmail.com'} 
+          className="flex flex-col items-center hover:bg-zinc-800 rounded p-2 transition duration-300"
+        >
+          <Icon icon="ic:baseline-email" width={60} height={60} className="transition duration-300 hover:text-lime-500 hover:scale-110" />
+        </button>
+
+        {/* LinkedIn Button */}
+        <button 
+          onClick={() => window.open('https://www.linkedin.com/in/your-profile', '_blank')} 
+          className="flex flex-col items-center hover:bg-zinc-800 rounded p-2 transition duration-300"
+        >
+          <Icon icon="akar-icons:linkedin-fill" width={60} height={60} className="transition duration-300 hover:text-lime-500 hover:scale-110" />
+        </button>
+
+        {/* GitHub Button */}
+        <button 
+          onClick={() => window.open('https://github.com/your-profile', '_blank')} 
+          className="flex flex-col items-center hover:bg-zinc-800 rounded p-2 transition duration-300"
+        >
+          <Icon icon="akar-icons:github-fill" width={60} height={60} className="transition duration-300 hover:text-lime-500 hover:scale-110" />
+        </button>
+      </div>
+    </section>
+  );
+}

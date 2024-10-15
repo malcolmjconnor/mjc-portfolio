@@ -1,5 +1,8 @@
 import localFont from "next/font/local";
 import "./globals.css";
+import BottomNav from './components/bottom-nav';
+import SideNav from './components/side-nav';
+import MaxWidthWrapper from './components/max-width-wrapper';
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -22,12 +25,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <header>
-        </header>
-        <main>{children}</main>
-        <footer className="bg-gray-200 p-3 text-center">
-          <p>&copy; {new Date().getFullYear()} Malcolm Connor Portfolio</p>
-        </footer>
+      <MaxWidthWrapper>
+          <div className="flex">
+            <SideNav />
+            <main className="flex-1">{children}</main>
+          </div>
+        </MaxWidthWrapper>
+        <BottomNav />
       </body>
     </html>
   );

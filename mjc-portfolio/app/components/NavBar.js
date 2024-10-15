@@ -6,7 +6,7 @@ export default function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 bg-white shadow-md z-50 flex justify-center rounded-full">
+    <nav className="fixed top-0 left-0 bg-white shadow-md z-50 flex justify-center rounded-full">
       <div className="flex justify-between items-center p-3 w-full max-w-4xl">
         <button 
           onClick={() => setIsMenuOpen(!isMenuOpen)} 

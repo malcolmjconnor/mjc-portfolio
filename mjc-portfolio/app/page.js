@@ -1,5 +1,4 @@
 // app/page.js
-import NavBar from './components/NavBar';
 import Welcome from "./components/Welcome";
 import About from "./components/About";
 import Projects from "./components/Projects";
@@ -7,8 +6,7 @@ import Contact from "./components/Contact";
 
 export default function Home() {
   return (
-    <div className="px-4 py-8">
-      <NavBar />
+    <div className="flex flex-col pt-4 sm:ml-[7.5rem] md:ml-[15.625rem] sm:border-r sm:border-zinc-700 pb-[1.25rem] px-[1rem] h-full">
       <Welcome />
       <About />
       <Projects />
