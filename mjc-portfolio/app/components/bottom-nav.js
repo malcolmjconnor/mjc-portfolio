@@ -2,18 +2,19 @@
 import React from 'react';
 import Link from 'next/link';
 import useNavigation from '/hook/use-navigation';
-import useScrollingEffect from '/hook/use-scroll';
+//import useScrollingEffect from '/hook/use-scroll';
 import { Icon } from '@iconify/react';
 
 const BottomNav = () => {
-  const scrollDirection = useScrollingEffect(); // Use the custom hook
-  const navClass = scrollDirection === 'up' ? '' : 'opacity-25 duration-500';
+  //const scrollDirection = useScrollingEffect(); // Use the custom hook
+  //const navClass = scrollDirection === 'up' ? '' : 'opacity-25 duration-500';
+  const navClass = {};
 
   const {
     isHomeActive,
-    isAboutActive, // Changed from isExploreActive to isAboutActive
-    isProjectsActive, // Changed from isNotificationsActive to isProjectsActive
-    isContactActive, // Changed from isMessagesActive to isContactActive
+    isAboutActive,
+    isProjectsActive,
+    isContactActive,
   } = useNavigation();
 
   return (
@@ -22,38 +23,36 @@ const BottomNav = () => {
     >
       <div className="flex flex-row justify-around items-center bg-transparent w-full">
         <Link href="#home" className="flex items-center relative">
-          {isHomeActive ? (
-            <Icon icon="mingcute:home-5-fill" width="32" height="32" />
-          ) : (
-            <Icon icon="mingcute:home-5-line" width="32" height="32" />
-          )}
-          {/* <span className="h-2 w-2 rounded-full bg-sky-500 absolute -top-0.5 right-[3px]"></span> */}
+          <Icon 
+            icon={isHomeActive ? "mingcute:home-5-fill" : "mingcute:home-5-line"} 
+            width="32" 
+            height="32" 
+            className={isHomeActive ? 'text-lime-500' : ''} // Apply lime color if active
+          />
         </Link>
         <Link href="#about" className="flex items-center">
-          {isAboutActive ? ( // Updated from isExploreActive
-            <Icon
-              icon="mingcute:user-3-fill"
-              width="32"
-              height="32"
-              className="stroke-current stroke-5"
-            />
-          ) : (
-            <Icon icon="mingcute:user-3-line" width="32" height="32" />
-          )}
+          <Icon 
+            icon={isAboutActive ? "mingcute:user-3-fill" : "mingcute:user-3-line"} 
+            width="32" 
+            height="32" 
+            className={`stroke-current stroke-5 ${isAboutActive ? 'text-lime-500' : ''}`} // Apply lime color if active
+          />
         </Link>
         <Link href="#projects" className="flex items-center">
-          {isProjectsActive ? ( // Updated from isNotificationsActive
-            <Icon icon="mingcute:braces-fill" width="32" height="32" />
-          ) : (
-            <Icon icon="mingcute:braces-line" width="32" height="32" />
-          )}
+          <Icon 
+            icon={isProjectsActive ? "mingcute:braces-fill" : "mingcute:braces-line"} 
+            width="32" 
+            height="32" 
+            className={isProjectsActive ? 'text-lime-500' : ''} // Apply lime color if active
+          />
         </Link>
         <Link href="#contact" className="flex items-center">
-          {isContactActive ? ( // Updated from isMessagesActive
-            <Icon icon="ic:baseline-email" width="32" height="32" />
-          ) : (
-            <Icon icon="ic:outline-email" width="32" height="32" />
-          )}
+          <Icon 
+            icon={isContactActive ? "ic:baseline-email" : "ic:outline-email"} 
+            width="32" 
+            height="32" 
+            className={isContactActive ? 'text-lime-500' : ''} // Apply lime color if active
+          />
         </Link>
       </div>
     </div>

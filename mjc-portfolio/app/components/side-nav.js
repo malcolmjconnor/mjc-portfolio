@@ -17,14 +17,14 @@ const SideNav = () => {
     <div className="flex-col space-y-4 py-8 hidden sm:flex border-r border-gray-700 h-full w-[7.5rem] md:w-[15.625rem] md:items-start fixed bg-stone-900">
       <Link
         href="#home"
-        className="flex flex-row space-x-1 items-center hover:bg-white/10 p-4 rounded-full duration-200"
+        className="flex flex-row space-x-1 items-center p-4 duration-200 hover:text-lime-500"
       >
-        <Icon icon="bi:twitter-x" width="38" height="38" />
+        <p>{"{malcolmjconnor}"}</p>
       </Link>
 
       <Link
         href="#home"
-        className={`flex flex-row space-x-4 items-center px-4 py-3 rounded-full duration-200 hover:bg-white/10 relative ${isHomeActive ? 'bg-white/10' : ''}`}
+        className={`flex flex-row space-x-4 items-center px-4 py-3 rounded-full duration-200 hover:text-lime-500 relative ${isHomeActive ? 'text-lime-500' : ''}`}
       >
         {isHomeActive ? (
           <Icon icon="mingcute:home-5-fill" width="38" height="38" />
@@ -38,7 +38,7 @@ const SideNav = () => {
 
       <Link
         href="#about"
-        className={`flex flex-row space-x-4 items-center px-4 py-3 rounded-full duration-200 hover:bg-white/10 ${isAboutActive ? 'bg-white/10' : ''}`}
+        className={`flex flex-row space-x-4 items-center px-4 py-3 rounded-full duration-200 hover:text-lime-500 relative ${isAboutActive ? 'text-lime-500' : ''}`}
       >
         {isAboutActive ? (
           <Icon icon="mingcute:user-3-fill" width="38" height="38" className="stroke-current stroke-5" />
@@ -52,7 +52,7 @@ const SideNav = () => {
 
       <Link
         href="#projects"
-        className={`flex flex-row space-x-4 items-center px-4 py-3 rounded-full duration-200 hover:bg-white/10 ${isProjectsActive ? 'bg-white/10' : ''}`}
+        className={`flex flex-row space-x-4 items-center px-4 py-3 rounded-full duration-200 hover:text-lime-500 relative ${isProjectsActive ? 'text-lime-500' : ''}`}
       >
         {isProjectsActive ? (
           <Icon icon="mingcute:braces-fill" width="38" height="38" />
@@ -66,7 +66,7 @@ const SideNav = () => {
 
       <Link
         href="#contact"
-        className={`flex flex-row space-x-4 items-center px-4 py-3 rounded-full duration-200 hover:bg-white/10 ${isContactActive ? 'bg-white/10' : ''}`}
+        className={`flex flex-row space-x-4 items-center px-4 py-3 rounded-full duration-200 hover:text-lime-500 relative ${isContactActive ? 'text-lime-500' : ''}`}
       >
         {isContactActive ? (
           <Icon icon="ic:baseline-email" width="38" height="38" />
