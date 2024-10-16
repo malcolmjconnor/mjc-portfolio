@@ -3,7 +3,7 @@ import { Icon } from '@iconify/react';
 
 export default function Contact() {
   return (
-    <section id="contact" className="h-screen mb-8 bg-black rounded-lg shadow-md p-6 flex flex-col justify-center items-center shadow-lg text-center">
+    <section id="contact" className="h-screen bg-black rounded-lg shadow-md p-6 flex flex-col justify-center items-center text-center">
       <h2 className="text-5xl font-bold text-lime-500">Let's work together</h2>
       
       <div className="mt-6 flex space-x-6">
