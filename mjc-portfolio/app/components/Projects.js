@@ -9,31 +9,31 @@ export default function Projects() {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
         <ProjectItems
           title="UMSL Basketball Analysis"
-          description="A dynamic dashboard created for the UMSL men's basketball team that allows users to visualize player performance metrics through interactive scatterplots."
+          description="An interactive dashboard designed for the UMSL basketball team, enabling coaches and analysts to explore player performance metrics through dynamic scatterplots. This tool provides actionable insights for optimizing game strategies."
           link="https://umsl-bball.streamlit.app"
           imgSrc="/images/ball2.svg"
           altText="UMSL Basketball Analysis"
         />
         <ProjectItems
           title="Cybersecurity"
-          description="An analysis project focused on understanding the implications of cyber warfare on national security."
+          description="A curated collection of insights and artifacts from Google's Cybersecurity Certificate, highlighting critical cybersecurity principles, real-world case studies, and best practices for safeguarding digital infrastructure."
           link="https://drive.google.com/file/d/1DxKuxnoIp5JFhC2Gdv4Pm2qyNVS5M_Wv"
           imgSrc="/images/cyber2.svg"
           altText="Cybersecurity"
         />
         <ProjectItems
-          title="Artificial Intelligence"
-          description="A project exploring various applications of AI in data analytics and how they enhance decision-making."
-          link="URL_TO_ARTIFICIAL_INTELLIGENCE"
-          imgSrc="/images/bot2.svg"
-          altText="Artificial Intelligence"
-        />
-        <ProjectItems
           title="CyberDrip"
-          description="A blog focused on exploring the landscape of technology from a data perspective."
+          description="An in-depth blog exploring the evolving landscape of technology through the lens of data. Topics include emerging trends, practical use cases, and thought-provoking discussions on the intersection of data and tech innovation."
           link="https://medium.com/@cyberdrip"
           imgSrc="/images/blog2.svg"
           altText="CyberDrip Blog"
+        />
+        <ProjectItems
+          title="Artificial Intelligence"
+          description="Project coming soon"
+          // link=""
+          imgSrc="/images/bot2.svg"
+          altText="Artificial Intelligence"
         />
       </div>
     </section>
