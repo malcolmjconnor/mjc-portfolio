@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export default function Welcome() {
   return (
-    <section id="home" className="h-screen flex flex-col justify-center items-center m-4 md:m-8 lg:m-12">
+    <section id="home" className="h-screen flex flex-col justify-center items-center m-4 md:m-12 lg:m-12">
       <img src="/images/mlogo.svg" alt="Logo" className="w-80 h-auto mb-4 animate-pulse transition-transform transform hover:scale-110 duration-1000" />
       <h2 className="text-3xl font-semibold text-center">
         Welcome to my{' '}
