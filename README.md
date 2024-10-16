@@ -1,4 +1,4 @@
-![Logo](public/images/mlogo.svg)
+<!-- ![Logo](public/images/mlogo.svg) -->
 
 
 
@@ -22,11 +22,10 @@ I am a data analytics specialist proficient in data visualization, analysis, and
 
 This portfolio is built using the following technologies:
 
-- **Next.js**: A React framework for building server-rendered applications.
+- **Next.js**: A React framework for building web applications.
 - **Tailwind CSS**: A utility-first CSS framework for styling.
-- **Iconify**: A library for adding scalable vector icons.
-- **JavaScript**: For interactivity and dynamic content.
-- **React**: For building UI components.
+- **Iconify**: A library for adding scalable vector icons
+
 
 ## Projects
 
