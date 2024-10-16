@@ -30,14 +30,7 @@ const BottomNav = () => {
             className={isHomeActive ? 'text-lime-500' : ''} // Apply lime color if active
           />
         </Link>
-        <Link href="#about" className="flex items-center">
-          <Icon 
-            icon={isAboutActive ? "mingcute:user-3-fill" : "mingcute:user-3-line"} 
-            width="32" 
-            height="32" 
-            className={`stroke-current stroke-5 ${isAboutActive ? 'text-lime-500' : ''}`} // Apply lime color if active
-          />
-        </Link>
+
         <Link href="#projects" className="flex items-center">
           <Icon 
             icon={isProjectsActive ? "mingcute:braces-fill" : "mingcute:braces-line"} 
@@ -46,6 +39,16 @@ const BottomNav = () => {
             className={isProjectsActive ? 'text-lime-500' : ''} // Apply lime color if active
           />
         </Link>
+        
+        <Link href="#about" className="flex items-center">
+          <Icon 
+            icon={isAboutActive ? "mingcute:user-3-fill" : "mingcute:user-3-line"} 
+            width="32" 
+            height="32" 
+            className={`stroke-current stroke-5 ${isAboutActive ? 'text-lime-500' : ''}`} // Apply lime color if active
+          />
+        </Link>
+
         <Link href="#contact" className="flex items-center">
           <Icon 
             icon={isContactActive ? "ic:baseline-email" : "ic:outline-email"} 

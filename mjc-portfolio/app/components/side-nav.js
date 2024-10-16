@@ -37,6 +37,20 @@ const SideNav = () => {
       </Link>
 
       <Link
+        href="#projects"
+        className={`flex flex-row space-x-4 items-center px-4 py-3 rounded-full duration-200 hover:text-lime-500 relative ${isProjectsActive ? 'text-lime-500' : ''}`}
+      >
+        {isProjectsActive ? (
+          <Icon icon="mingcute:braces-fill" width="38" height="38" />
+        ) : (
+          <Icon icon="mingcute:braces-line" width="38" height="38" />
+        )}
+        <span className={`text-lg ${isProjectsActive ? 'font-bold' : ''}`}>
+          Projects
+        </span>
+      </Link>
+
+      <Link
         href="#about"
         className={`flex flex-row space-x-4 items-center px-4 py-3 rounded-full duration-200 hover:text-lime-500 relative ${isAboutActive ? 'text-lime-500' : ''}`}
       >
@@ -50,19 +64,6 @@ const SideNav = () => {
         </span>
       </Link>
 
-      <Link
-        href="#projects"
-        className={`flex flex-row space-x-4 items-center px-4 py-3 rounded-full duration-200 hover:text-lime-500 relative ${isProjectsActive ? 'text-lime-500' : ''}`}
-      >
-        {isProjectsActive ? (
-          <Icon icon="mingcute:braces-fill" width="38" height="38" />
-        ) : (
-          <Icon icon="mingcute:braces-line" width="38" height="38" />
-        )}
-        <span className={`text-lg ${isProjectsActive ? 'font-bold' : ''}`}>
-          Projects
-        </span>
-      </Link>
 
       <Link
         href="#contact"
