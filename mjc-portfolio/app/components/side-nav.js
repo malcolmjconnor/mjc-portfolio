@@ -14,10 +14,10 @@ const SideNav = () => {
   } = useNavigation();
 
   return (
-    <div className="flex-col space-y-4 py-8 hidden sm:flex border-r border-gray-700 h-full w-[7.5rem] md:w-[15.625rem] md:items-start fixed bg-stone-900">
+    <div className="flex-col space-y-4 py-8 hidden sm:flex border-r border-gray-400 h-full w-[7.5rem] md:w-[15.625rem] md:items-start fixed bg-stone-900">
       <Link
         href="#home"
-        className="flex flex-row space-x-1 items-center p-4 duration-200 hover:text-lime-500"
+        className="flex flex-row space-x-1 items-center p-4 duration-200 text-lime-500 hover:text-slate-200"
       >
         <p>{"{malcolmjconnor}"}</p>
       </Link>

@@ -17,7 +17,7 @@ export default function Contact() {
 
         {/* LinkedIn Button */}
         <button 
-          onClick={() => window.open('https://www.linkedin.com/in/your-profile', '_blank')} 
+          onClick={() => window.open('https://www.linkedin.com/in/malcolmjconnor', '_blank')} 
           className="flex flex-col items-center hover:bg-zinc-800 rounded p-2 transition duration-300"
         >
           <Icon icon="akar-icons:linkedin-fill" width={60} height={60} className="transition duration-300 hover:text-lime-500 hover:scale-110" />
@@ -25,7 +25,7 @@ export default function Contact() {
 
         {/* GitHub Button */}
         <button 
-          onClick={() => window.open('https://github.com/your-profile', '_blank')} 
+          onClick={() => window.open('https://github.com/malcolmjconnor', '_blank')} 
           className="flex flex-col items-center hover:bg-zinc-800 rounded p-2 transition duration-300"
         >
           <Icon icon="akar-icons:github-fill" width={60} height={60} className="transition duration-300 hover:text-lime-500 hover:scale-110" />

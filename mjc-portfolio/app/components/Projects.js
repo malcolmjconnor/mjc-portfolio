@@ -6,7 +6,7 @@ export default function Projects() {
       
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
         <div className="border p-4 rounded-lg">
-          <a href="URL_TO_UMSL_BASKETBALL_ANALYSIS" target="_blank" rel="noopener noreferrer">
+          <a href="https://umsl-bball.streamlit.app" target="_blank" rel="noopener noreferrer">
             <img src="/images/ball.svg" alt="UMSL Basketball Analysis" className="w-full h-32 object-cover rounded mb-2" />
           </a>
           <h3 className="font-bold mt-2 text-lime-500">UMSL Basketball Analysis</h3>
@@ -14,10 +14,10 @@ export default function Projects() {
         </div>
         
         <div className="border p-4 rounded-lg">
-          <a href="URL_TO_CYBERWARFARE" target="_blank" rel="noopener noreferrer">
-            <img src="/images/cyber.svg" alt="Cyberwarfare" className="w-full h-32 object-cover rounded mb-2" />
+          <a href="https://drive.google.com/file/d/1DxKuxnoIp5JFhC2Gdv4Pm2qyNVS5M_Wv" target="_blank" rel="noopener noreferrer">
+            <img src="/images/cyber.svg" alt="Cybersecurity" className="w-full h-32 object-cover rounded mb-2" />
           </a>
-          <h3 className="font-bold mt-2 text-lime-500">Cyberwarfare</h3>
+          <h3 className="font-bold mt-2 text-lime-500">Cybersecurity</h3>
           <p className="mt-1">An analysis project focused on understanding the implications of cyber warfare on national security.</p>
         </div>
         
@@ -30,7 +30,7 @@ export default function Projects() {
         </div>
 
         <div className="border p-4 rounded-lg ">
-          <a href="URL_TO_CYBERDRIP_BLOG" target="_blank" rel="noopener noreferrer">
+          <a href="https://medium.com/@cyberdrip" target="_blank" rel="noopener noreferrer">
             <img src="/images/blog.svg" alt="CyberDrip Blog" className="w-full h-32 object-cover rounded mb-2" />
           </a>
           <h3 className="font-bold mt-2 text-lime-500">CyberDrip</h3>
