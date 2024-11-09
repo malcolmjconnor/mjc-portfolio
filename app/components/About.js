@@ -5,7 +5,7 @@ import AboutItems from './AboutItems';
 
 export default function About() {
   return (
-    <section id="about" className="h-screen mb-8 p-6 bg-white rounded-lg shadow-md overflow-y-auto">
+    <section id="about" className="h-screen mb-8 p-6 bg-white rounded-lg shadow-md overflow-y-auto pt-14">
       <h2 className="text-3xl font-semibold text-gray-700 mb-4 border-b-2 border-lime-500 pb-2">About</h2>
       <p className="mt-2 text-black leading-relaxed">
       I am a data analytics specialist with a passion for technology and a proven track record in transforming complex data into accessible insights. I excel at utilizing various tools that drive informed decision-making. My journey has equipped me with a diverse skill set, and I am committed to continuous learning and improvement, always seeking to enhance my expertise in the ever-evolving fields of data analytics and technology. Some of the programming tools I have worked with include:
