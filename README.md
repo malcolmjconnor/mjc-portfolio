@@ -5,7 +5,9 @@
 # My Portfolio
 
 Welcome to my portfolio! This repository showcases my projects and skills as a data analyst and developer. It’s designed for developers, employers, and learners who are interested in my work and expertise in the fields of data analytics and technology.
-https://malcolmjconnor.com
+View this portfolio: https://mjc-portfolio.vercel.app
+
+View previous portfolio: https://malcolmjconnor.com
 
 ## Table of Contents
 

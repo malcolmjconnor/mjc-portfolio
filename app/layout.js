@@ -3,7 +3,6 @@
 import localFont from "next/font/local";
 import "./globals.css";
 import MaxWidthWrapper from './components/max-width-wrapper';
-import { useState } from 'react';
 import Navbar from './components/Navbar';
 
 const geistSans = localFont({
