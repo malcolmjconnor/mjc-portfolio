@@ -4,10 +4,9 @@ import ProjectItems from './ProjectItems';
 export default function Projects() {
 
   return (
-    // <section id="projects" className="h- mb-8 p-6 sm:mb-8 lg:mb-12 bg-lime-500 rounded-lg shadow-md pt-14">
+
     <section id="projects" className="mb-8 p-6 sm:mb-8 lg:mb-12 bg-lime-500 rounded-lg shadow-md pt-14 w-full">
       <h2 className="text-3xl font-semibold text-black mb-4 border-b-2 border-black pb-2">Projects</h2>
-      {/* <div className="flex overflow-x-auto space-x-2"> */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
         <ProjectItems
           title="UMSL Basketball Analysis"
