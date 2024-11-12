@@ -2,12 +2,17 @@
 
 export default function ProjectItems({ title, description, link, imgSrc, altText }) {
   return (
-    <div className="p-4 rounded-lg transform transition-all hover:scale-105 hover:border-none">
-      <a href={link} target="_blank" rel="noopener noreferrer">
-        <img src={imgSrc} alt={altText} className="w-full h-32 object-cover rounded mb-2" />
+    <div className="p-12 rounded-lg hover:border-none w-full">
+      <a href={link} target="_blank" rel="noopener noreferrer" className="flex justify-center">
+        <img 
+          src={imgSrc} 
+          alt={altText} 
+          className="object-cover rounded mb-2 transform transition-all hover:scale-105" 
+          style={{ width: '20rem', height: '20rem' }} 
+        />
       </a>
-      <h3 className="font-bold mt-2 text-black">{title}</h3>
-      <p className="mt-1 text-black">{description}</p>
+      <h3 className="font-bold mt-2 text-black text-center">{title}</h3>
+      <p className="mt-1 text-black text-center">{description}</p>
     </div>
   );
 }
