@@ -8,7 +8,7 @@ export default function ProjectItems({ title, description, link, imgSrc, altText
           src={imgSrc} 
           alt={altText} 
           className="object-cover rounded mb-2 transform transition-all hover:scale-105" 
-          style={{ width: '20rem', height: '20rem' }} 
+          style={{ width: '100%', height: '100%' }} 
         />
       </a>
       <h3 className="font-bold mt-2 text-black text-center">{title}</h3>
